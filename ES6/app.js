@@ -10,38 +10,72 @@
 // TEMPLATE LITERALS
 // ARROW FUNCTIONS
 // TERNARY OPERTORS
-// PROMISES
-// ASYNC AWAIT
 // REST OPERATORS
 // SPREAD OPERATORS
+// PROMISES
+// ASYNC AWAIT
 // MAP
 // ARRAYS IN DETAIL
 // OBJECTS IN DETAIL
 
 // function outerFunction() {
-//     var person1 = "asma khan";
-//     function innerFunction1() {
-//         var person1 = "maha khan";
-//         console.log("i am innerFunction1", + " " + person1);
+//     let name = "asma";
+//     function innerFunction1(person) {
+//         let name = "asma";
+//         console.log(name);
 //         function innerFunction2() {
-//             var person1 = "ruhama khan";
-//             console.log("i am innerFunction2", + " " + person1);
+//             let name = "asma";
+//             console.log(name);
 //             function innerFunction3() {
-//                 var person1 = "safia khan";
-//                 console.log("i am innerFunction3", + " " + person1);
+//                 let name = "asma";
+//                 console.log(name);
+//                 function innerFunction4() {
+//                     let name = "asma";
+//                     console.log(name);
+//                 }
 //             }
 //         }
 //     }
+//     return innerFunction1;
 // }
 
-function outerFunction() {
-    console.log("I am Outer Function");
-    var person1 = "asma khan";
-    function innerFunction(name) {
-        console.log(name);
-        console.log(person1);
-    }
-    return innerFunction();
-}
+// let store = outerFunction();
+// store(person)
 
-outerFunction("maha")
+// Difference between function and arrow function
+
+// FUNCTION
+// we can't write one line of code in normal function
+// arrow functions have own this keyword
+
+// ARROW FUNCTION
+// we can write one line of code in arrow function
+// arrow functions do not have own this keyword
+
+// function normalFunction(params) {
+//     let sum = 10 + 10;
+//     return sum;
+// }
+
+// function arrowFunction(obj) {
+//     return obj;
+// }
+
+// const arrowFunction1 = (obj) => obj;
+
+// const arrowFunction2 = (obj) => {
+//     return obj;
+// };
+
+// let obj1 = arrowFunction1({ person: "maha", age: 20, gender: "female" })
+// let obj2 = arrowFunction2({ person: "maha", age: 20, gender: "female" })
+// console.log(obj1);
+// console.log(obj2);
+
+// TERNARY OPERATORS
+
+// const age = 30;
+// const check1 = age === 30 ? "correct age" : "wrong age";
+// const check2 = age === 30 && "correct age";
+// console.log(check1);
+// console.log(check2);
